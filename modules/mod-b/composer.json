@@ -1,0 +1,36 @@
+{
+    "name": "adriangligor/mod-b",
+    "type": "project",
+    "require": {
+        "php": "^7.3",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "adriangligor/mod-shared": "@dev"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "mockery/mockery": "^1.0"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": "tests/"
+        }
+    },
+    "repositories": {
+        "mod-shared": {
+            "type": "path",
+            "url": "../mod-shared"
+        }
+    }
+}
